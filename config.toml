@@ -1,7 +1,6 @@
 baseURL = "https://sirivennelasahityam.com/"
 languageCode = "te"
 title = "Sirivennela Sahityam"
-theme = ""
 
 [params]
   description = "Lyrics collection of Sirivennela Seetharama Sastry's work"

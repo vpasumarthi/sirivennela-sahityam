@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="home">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <h2>Movies</h2>
+  <ul class="movie-list">
+    {{ range (where .Site.Sections "Section" "movies").Pages }}
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="meta">{{ .Params.year }}</span>
+        <ul>
+          {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

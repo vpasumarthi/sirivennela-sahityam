@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="song">
+  <header class="song-header">
+    <h1>{{ .Title }}</h1>
+    <div class="song-meta">
+      {{ with .Params.movie }}<span>Movie: <a href="{{ (printf "/movies/%s/" (. | urlize)) | relURL }}">{{ . }}</a></span>{{ end }}
+      {{ with .Params.year }}<span>Year: {{ . }}</span>{{ end }}
+      {{ with .Params.music }}<span>Music: {{ . }}</span>{{ end }}
+      {{ with .Params.singers }}<span>Singers: {{ delimit . ", " }}</span>{{ end }}
+      {{ with .Params.raagam }}<span>Raagam: {{ . }}</span>{{ end }}
+    </div>
+  </header>
+  <div class="lyrics">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
