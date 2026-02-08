@@ -18,6 +18,12 @@ Lyrics collection and exploration site for Sirivennela Seetharama Sastry's work.
 - **View toggle**: Switch between static (plain) view and feedback-weighted view.
 - Architecture: static site + client-side JS calls to Firebase/Supabase API for read/write. No backend server needed.
 
+## Design Preferences
+- **Telugu font**: Noto Sans Telugu (Google Fonts) — clean, readable, well-maintained
+  - Alternative for literary feel: Noto Serif Telugu
+- **Responsive**: Must work seamlessly on both desktop and mobile
+- **Mobile UX**: Tap-to-highlight for community voting (not hover-based)
+
 ## Status
 Someday project — tracked from `~/Gits/nirdeshi/projects_ideas/someday.md`
 
