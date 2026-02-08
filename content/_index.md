@@ -2,4 +2,4 @@
 title: "Sirivennela Sahityam"
 ---
 
-Lyrics collection and exploration of Sirivennela Seetharama Sastry's work.
+Lyrics of Sirivennela Seetharama Sastry — one of Telugu cinema's most celebrated lyricists.
