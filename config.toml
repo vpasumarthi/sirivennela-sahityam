@@ -1,0 +1,16 @@
+baseURL = "https://sirivennelasahityam.com/"
+languageCode = "te"
+title = "Sirivennela Sahityam"
+theme = ""
+
+[params]
+  description = "Lyrics collection of Sirivennela Seetharama Sastry's work"
+  author = "Sirivennela Seetharama Sastry"
+
+[taxonomies]
+  music = "music"
+  singer = "singers"
+  year = "years"
+
+[markup.goldmark.renderer]
+  unsafe = true
