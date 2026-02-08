@@ -11,6 +11,12 @@ Lyrics collection and exploration site for Sirivennela Seetharama Sastry's work.
 - Static site generator (Hugo or Jekyll)
 - GitHub Pages for hosting
 - Custom domain via CNAME record
+- Firebase/Supabase free tier for community feedback data (vote counts)
+
+## Feature Ideas
+- **Community-weighted lyrics**: Users select lines/portions that resonate with them. Over time, popular lines render in bold or larger font based on aggregate response.
+- **View toggle**: Switch between static (plain) view and feedback-weighted view.
+- Architecture: static site + client-side JS calls to Firebase/Supabase API for read/write. No backend server needed.
 
 ## Status
 Someday project — tracked from `~/Gits/nirdeshi/projects_ideas/someday.md`
