@@ -4,16 +4,18 @@
   {{ .Content }}
   <h2>Movies</h2>
   <ul class="movie-list">
-    {{ range (where .Site.Sections "Section" "movies").Pages }}
+    {{ range where .Site.Sections "Section" "movies" }}
       {{ range .Pages }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="meta">{{ .Params.year }}</span>
+        {{ with .Params.year }}<span class="meta">{{ . }}</span>{{ end }}
+        {{ if .Pages }}
         <ul>
           {{ range .Pages }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
           {{ end }}
         </ul>
+        {{ end }}
       </li>
       {{ end }}
     {{ end }}
